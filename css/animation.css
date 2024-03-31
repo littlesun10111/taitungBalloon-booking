@@ -1,0 +1,332 @@
+.balloon-s-1 {
+  width: 48px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 20%;
+  top: 89%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-w.png);
+  filter: blur(2px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -0.1s;
+}
+
+.balloon-s-2 {
+  width: 45px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 48%;
+  top: 57%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-w.png);
+  filter: blur(1px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -0.2s;
+}
+
+.balloon-s-3 {
+  width: 8px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 52%;
+  top: 95%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-y.png);
+  filter: blur(0px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -0.3s;
+}
+
+.balloon-s-4 {
+  width: 28px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 46%;
+  top: 51%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-y.png);
+  filter: blur(0px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -0.4s;
+}
+
+.balloon-s-5 {
+  width: 2px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 97%;
+  top: 11%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-g.png);
+  filter: blur(1px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -0.5s;
+}
+
+.balloon-s-6 {
+  width: 43px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 67%;
+  top: 17%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-b.png);
+  filter: blur(2px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -0.6s;
+}
+
+.balloon-s-7 {
+  width: 29px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 75%;
+  top: 38%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-y.png);
+  filter: blur(0px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -0.7s;
+}
+
+.balloon-s-8 {
+  width: 26px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 87%;
+  top: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-w.png);
+  filter: blur(1px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -0.8s;
+}
+
+.balloon-s-9 {
+  width: 21px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 88%;
+  top: 95%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-y.png);
+  filter: blur(0px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -0.9s;
+}
+
+.balloon-s-10 {
+  width: 16px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 25%;
+  top: 49%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-y.png);
+  filter: blur(2px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -1s;
+}
+
+.balloon-s-11 {
+  width: 34px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 59%;
+  top: 94%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-y.png);
+  filter: blur(0px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -1.1s;
+}
+
+.balloon-s-12 {
+  width: 20px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 43%;
+  top: 26%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-p.png);
+  filter: blur(0px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -1.2s;
+}
+
+.balloon-s-13 {
+  width: 4px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 89%;
+  top: 48%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-w.png);
+  filter: blur(2px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -1.3s;
+}
+
+.balloon-s-14 {
+  width: 18px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 60%;
+  top: 57%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-w.png);
+  filter: blur(0px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -1.4s;
+}
+
+.balloon-s-15 {
+  width: 12px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 83%;
+  top: 4%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-y.png);
+  filter: blur(0px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -1.5s;
+}
+
+.balloon-s-16 {
+  width: 43px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 6%;
+  top: 55%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-y.png);
+  filter: blur(1px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -1.6s;
+}
+
+.balloon-s-17 {
+  width: 3px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 54%;
+  top: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-p.png);
+  filter: blur(0px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -1.7s;
+}
+
+.balloon-s-18 {
+  width: 20px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 21%;
+  top: 63%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-b.png);
+  filter: blur(0px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -1.8s;
+}
+
+.balloon-s-19 {
+  width: 7px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 21%;
+  top: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-y.png);
+  filter: blur(2px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -1.9s;
+}
+
+.balloon-s-20 {
+  width: 7px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 53%;
+  top: 47%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-w.png);
+  filter: blur(1px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -2s;
+}
+
+.balloon-s-21 {
+  width: 16px;
+  aspect-ratio: 17/20;
+  position: absolute;
+  left: 10%;
+  top: 28%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-g.png);
+  filter: blur(2px);
+  animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards;
+  animation-delay: -2.1s;
+}
+
+@keyframes floatFarAway {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+    transform: translateY(-120px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-130px);
+  }
+}/*# sourceMappingURL=animation.css.map */

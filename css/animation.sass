@@ -1,0 +1,49 @@
+=size($w,$h:$w)
+  width: $w
+  height: $h
+=abpos($posX,$posY)
+  position: absolute
+  left: $posX
+  top: $posY
+=flex($j,$a)
+  display: flex
+  justify-content: $j
+  align-items: $a
+
+$floatPink: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-p.png)
+$floatWhite: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-w.png)
+$floatGreen: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-g.png)
+$floatBlue: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-b.png)
+$floatYellow: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/floating/balloon-y.png)
+$floatGroup: ($floatPink,$floatWhite,$floatGreen,$floatBlue,$floatYellow)
+
+@for $i from 1 through 21
+  .balloon-s-#{$i}
+    $w: random(48)*1px 
+    width: $w
+    aspect-ratio: 17 / 20
+    $posX: random(98)*1%
+    $posY: random(100)*1%
+    +abpos($posX,$posY)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: contain
+    background-image: nth($floatGroup,random(5))
+    filter: blur(abs((random(3)*1px) - 1px))
+    animation: floatFarAway 20s cubic-bezier(0.08, 0.35, 0.94, 0.82) infinite forwards
+    animation-delay: #{$i*-0.1}s
+
+@keyframes floatFarAway 
+    0%
+        opacity: 0
+        transform: translateY(0)
+    5%
+        opacity: 1
+    
+    95%
+        opacity: 1
+        transform: translateY(-120px)
+    
+    100%
+        opacity: 0
+        transform: translateY(-130px)

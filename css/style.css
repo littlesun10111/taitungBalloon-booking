@@ -1,0 +1,1778 @@
+html {
+    line-height: 1.15; 
+    -webkit-text-size-adjust: 100%; 
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box; 
+    height: 0; 
+    overflow: visible; 
+}
+
+pre {
+    font-family: monospace, monospace; 
+    font-size: 1em; 
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none; 
+    text-decoration: underline; 
+    text-decoration: underline dotted; 
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace; 
+    font-size: 1em; 
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit; 
+    font-size: 100%; 
+    line-height: 1.15; 
+    margin: 0; 
+}
+
+button,
+input { 
+    overflow: visible;
+}
+
+button,
+select { 
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    appearance: button;
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box; 
+    color: inherit; 
+    display: table; 
+    max-width: 100%; 
+    padding: 0; /* 3 */
+    white-space: normal; 
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box; 
+    padding: 0; 
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    appearance: textfield; 
+    -webkit-appearance: textfield; 
+    outline-offset: -2px; 
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button; 
+    font: inherit; 
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+/*-------------------- 共用樣式 --------------------*/
+@font-face {
+    font-family: SweiGothicCJKtc-Regular;
+        src: url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff2) format("woff2")
+        , url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
+}
+
+/* font-family: 'RocknRoll One', sans-serif; */
+
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+
+html,body {
+    font-family:SweiGothicCJKtc-Regular,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: 400;
+    color: #121212;
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6,p,figure,blockquote,ol,ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+a {
+    color: #1677ff;
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+a:hover,a:focus {
+    text-decoration: none;
+    color: #69b1ff;
+    outline: 0;
+}
+
+a:active {
+    text-decoration: none;
+    color: #0958d9;
+    outline: 0;
+}
+
+/*-------------------- format --------------------*/
+:root{
+    --swiper-navigation-size: ;
+    --swiper-theme-color: ;
+    --red:#ce4a45;
+    --green:#28a745;
+    --darkGreen:#007e1d;
+    --yellow:#ffea00;
+    --lightYellow:#ffe95f;
+    --lightGreen:#90fee9;
+    --lightBlue:#dbfcfe;
+    --tableGray:#a3b3b7;
+    --tableHeadColor:#e9ecef;
+    --gray:#555;
+    --instrSubtitleColor:#5F7FFD;
+    --timeSubtitleColor:#95cdfa;
+    --proSubtitleColor:#19DED4;
+    --stepSubtitleColor:#274046;
+}
+
+.wrapper{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+[class^='section__']{
+    padding: 60px 0;
+}
+
+@media screen and (min-width:768px) {
+    [class^='section__']{
+        padding: 80px 0;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    [class^='section__']{
+        padding: 100px 0;
+    }
+}
+
+[class^='block__']{
+    padding: 0 15px;
+}
+
+[class^='title__']{
+    font-size: 1.875rem;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto 40px;
+    display: flex;
+    align-items: center;
+}
+
+[class^='title__'] h2,
+[class^='title__'] h1 {
+    font-family:'RocknRoll One',SweiGothicCJKtc-Regular,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 2rem;
+}
+
+@media screen and (min-width:992px){
+
+    [class^='title__'] h2,
+    [class^='title__'] h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width:992px){
+
+    [class^='title__'] h2,
+    [class^='title__'] h1 {
+        font-size: 2.75rem;
+    }
+}
+
+@media screen and (min-width:1200px){
+
+    [class^='title__'] h2,
+    [class^='title__'] h1 {
+        font-size: 3rem;
+    }
+}
+
+.sub-title {
+    font-size: 1.125rem;
+    padding-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+[class*="highlight-"] {
+    padding-right: 5px;
+    padding-left: 5px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 30%;
+    width: fit-content;
+    margin: 0 auto 20px;
+}
+
+.highlight-y {
+    background-image: url(https://event.cdn-eztravel.com.tw/events/2022-taitung-balloon-booking/bg-title-stroke.png);
+}
+
+@media screen and (min-width:375px){
+    .sub-title {
+        font-size: 1.375rem;
+    }
+}
+
+@media screen and (min-width:768px){
+    .sub-title {
+        font-size: 1.75rem;
+        padding-bottom: 28px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .sub-title {
+        font-size: 2rem;
+    }
+}
+
+[class$="-note"] {
+    margin-bottom: 1.225rem;
+}
+
+[class$="-note"] li{
+    list-style: decimal inside;
+    padding-bottom: 0.5rem;
+    white-space: pre-line;
+}
+
+/*-------------------- components --------------------*/
+
+.btn-sale {
+    font-weight: 600;
+    background-color: var(--yellow);
+    border-color: var(--yellow);
+    color: #121212;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+}
+
+.btn-sale:hover , .pro-link:hover .btn-sale {
+    background-color: var(--warning);
+    border-color: var(--warning);
+}
+
+.o-style-table {
+    border: 4px solid var(--tableGray);
+    border-radius: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.o-style-table td,
+.o-style-table th {
+    vertical-align: middle;
+    text-align: center;
+}
+.o-style-table tr td,
+.o-style-table tr th {
+    background-color: #fff;
+}
+.o-style-table tr td:first-child,
+.o-style-table tr th:first-child {
+    background-color: var(--lightGreen);
+}
+.o-style-table th:first-child {
+    border-radius: 18px 0 0 0 ;
+}
+.o-style-table th:last-child {
+    border-radius: 0 18px 0 0  ;
+}
+.o-style-table tr:last-child td:first-child {
+    border-radius: 0 0 0 18px;
+}
+.o-style-table tr:last-child td:last-child {
+    border-radius: 0 0 18px 0 ;
+}
+
+.h-writting-table {
+    border: 4px solid var(--tableGray);
+    border-radius: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.h-writting-table th {
+    background-color: var(--tableHeadColor);
+    text-align: center;
+}
+.h-writting-table th:first-child {
+    border-radius: 18px 0 0 0 ;
+}
+.h-writting-table th:last-child {
+    border-radius: 0 18px 0 0 ;
+}
+.h-writting-table tr:last-child td:first-child {
+    border-radius: 0 0 0 18px;
+}
+.h-writting-table tr:last-child td:last-child {
+    border-radius: 0 0 18px 0 ;
+}
+.h-writting-table tr:first-child td:last-child {
+    border-radius: 0 18px 0 0 ;
+}
+
+.h-writting-table td {
+    border: 1px solid var(--gray);
+    background-color: #fff;
+    border-top: none;
+    border-left: none;
+    text-align: center;
+    vertical-align: middle
+}
+.h-writting-table tr td:last-child {
+    border-right: none;
+}
+.h-writting-table tr:last-child td {
+    border-bottom: none;
+}
+
+.subTitle__instr .sub-title,
+.subTitle__time .sub-title,
+.subTitle__step .sub-title,
+.subTitle__pro .sub-title,
+.subTitle__register .sub-title,
+.subTitle__checkTime .sub-title {
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    display: block;
+    width: 32px;
+    padding-top: 2px;
+    border-radius: 50%;
+    background-color: #fff;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    line-height: 32px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-size: inherit;
+}
+
+.circle + .circle {
+    margin-left: 6px;
+}
+
+.subTitle__instr .circle {
+    color: var(--instrSubtitleColor);
+}
+
+.subTitle__time .circle {
+    color: var(--timeSubtitleColor);
+}
+
+.subTitle__pro .circle {
+    color: var(--proSubtitleColor);
+}
+
+.subTitle__step .circle {
+    color: var(--stepSubtitleColor);
+}
+
+@media screen and (min-width:375px){
+    .circle {
+        width: 40px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .circle {
+        width: 48px;
+        line-height: 48px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .circle {
+        width: 56px;
+        line-height: 56px;
+    }
+}
+
+
+/* ------------ section__info setting ------------ */
+.section__info {
+    background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/clearly-sky-bg.png) , linear-gradient(to right , #8CB5FD,#66D1FF);
+    background-repeat: no-repeat , no-repeat;
+    background-position: 0px -120px , center bottom;
+    background-size:  cover , cover;
+    position: relative;
+}
+
+.section__info:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/left-cloud-bg.png) no-repeat left 120px / 150% auto;
+    z-index: 1;
+    transition: all ease 200ms;
+}
+
+.section__info:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/right-cloud-bg.png) no-repeat right center / 150% auto;
+    z-index: 2;
+    transition: all ease 200ms;
+}
+
+@media screen and (min-width:425px) {
+    .section__info:before,
+    .section__info:after {
+        background-size: 100% auto;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .section__info:before,
+    .section__info:after {
+        width: 50%;
+        background-size: 150% auto;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .section__info:before,
+    .section__info:after {
+        background-position: left top;
+        width: 50%;
+        background-size: 100% auto;
+    }
+}
+
+.clouds{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/back-cloud-bg.png) no-repeat left bottom / 300% auto;
+    z-index: 3;
+}
+
+.clouds:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(120px);
+    width: 100%;
+    height: 100%;
+    background: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/front-cloud-bg.png) no-repeat center bottom / 300% auto;
+    transition: all ease 200ms;
+}
+
+@media screen and (min-width:425px) {
+    .clouds:after {
+        background-size: 200% auto;
+        transform: translateY(90px);
+    }
+}
+
+@media screen and (min-width:768px) {
+    .clouds {
+        background-size: 150% auto;
+    }
+    .clouds:after {
+        transform: translateY(160px); 
+    }
+}
+
+@media screen and (min-width:992px) {
+    .clouds:after {
+        background-size: 100% auto;
+        transform: translateY(112px);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .clouds:after {
+        transform: translateY(120px);
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .clouds:after {
+        transform: translateY(160px);
+    }
+}
+
+@media screen and (min-width:1560px) {
+    .clouds:after {
+        transform: translateY(270px);
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .clouds:after {
+        transform: translateY(200px);
+    }
+}
+
+.balloons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 4;
+}
+
+.balloons:before {
+    content: '';
+    position: absolute;
+    right: 15px;
+    bottom: -50px;
+    width: 30%;
+    height: 150px;
+    background: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/blue-hot-ballooon.png) no-repeat right bottom / 90% auto;
+    animation: floating 5s alternate infinite linear ;
+    z-index: 1;
+}
+
+.balloons:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 30%;
+    height: 150px;
+    background: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/yellow-hot-ballooon.png) no-repeat 130% bottom / 60% auto;
+    animation: floating 5s alternate infinite linear 3.8s;
+}
+
+@media screen and (min-width:540px){
+    .balloons:before,
+    .balloons:after {
+        height: 250px;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    .balloons:before {
+        background-size: 75%;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .balloons:before,
+    .balloons:after {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .balloons:before,
+    .balloons:after {
+        height: 90%;
+        animation-duration: 10s;
+    }
+}
+
+.section__info .wrapper {
+    position: relative;
+    z-index: 5;
+}
+
+.title__info {
+    color: var(--lightBlue);
+}
+
+.title__info span {
+    display: inline-block;
+}
+
+/* ---fragment__instr--- */
+
+.fragment__instr ,.fragment__time {
+    background-color: rgba(255,255,255,.45);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+}
+
+.fragment__instr {
+    border-radius: 20px 20px 0 0 ;
+}
+
+.fragment__time {
+    border-radius: 0 0 20px 20px;
+}
+
+.instr-item h3 {
+    background-color: var(--lightGreen);
+    font-size: 1rem;
+    white-space: nowrap;
+    padding: 0.4rem 1.2rem;
+    border-radius: 87px;
+    width: fit-content;
+    font-weight: 600;
+    vertical-align: bottom;
+    margin-bottom: 1rem;
+}
+
+.instr-item p {
+    margin-bottom: 1rem;
+}
+
+.instr-item span {
+    display: inline-block;
+}
+
+@media screen and (min-width:768px) {
+    .fragment__instr ,.fragment__time {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .fragment__instr {
+        padding-top: 30px;
+    }
+    .fragment__time {
+        padding-bottom: 30px;
+    }
+
+    .instr-item {
+        display: flex;
+        align-items: center;
+    }
+    .instr-item p {
+        width: calc(100% - 130px);
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .fragment__instr ,.fragment__time {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .fragment__instr {
+        padding-top: 40px;
+    }
+
+    .fragment__time {
+        padding-bottom: 40px;
+    }
+}
+
+/* ---fragment__time--- */
+
+.fragment__time .h-writting-table {
+    background-color: #fff;
+    margin-bottom: initial;
+}
+
+.fragment__time .h-writting-table tr:not(:last-child) td:first-child {
+    background-color: var(--lightGreen);
+}
+.fragment__time .h-writting-table tr:first-child td:first-child {
+    border-radius: 18px 0 0 0 ;
+}
+.fragment__time .h-writting-table td[rowspan="2"] {
+    border-radius: 0 0 0 18px ;
+    border-bottom: none;
+}
+.h-writting-table strong {
+    font-size: 20px;
+    color: var(--red);
+}
+
+/* ------------ section__reserve setting ------------ */
+/* ---bg style / format--- */
+.section__reserve {
+    position: relative;
+    background-image: linear-gradient(to top , #69a07b 60px, var(--stepSubtitleColor) 210px);
+}
+
+.section__reserve:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/field.png) no-repeat top center / cover;
+    z-index: 1;
+}
+
+.scenery {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(50% - 100px);
+    background-image: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/sky-m-bg.png) ;
+    background-repeat: no-repeat ;
+    background-position: center top ;
+    background-size: cover ;
+}
+
+.scenery:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/front-m-bg.png) no-repeat left bottom ;
+    background-size: auto 100%;
+    z-index: 3;
+}
+
+.scenery:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to bottom , transparent 0, var(--stepSubtitleColor) 60%);;
+    z-index: 4;
+}
+
+.mountains {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/back-m-bg.png) no-repeat left bottom ;
+    background-size: 350% auto;
+}
+
+.decoration {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.decoration:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40%;
+    height: 250px;
+    background: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/red-hot-ballooon.png) no-repeat -50px bottom / 90% auto;
+    animation: floating 8s alternate infinite linear;
+}
+
+.decoration:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 150px;
+    width: 32%;
+    height: 250px;
+    background: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/yellow-hot-ballooon.png) no-repeat 120% bottom / 90% auto;
+    animation: floating 8s alternate infinite linear -3.2s;
+}
+
+.decoration .left {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    height: 50%;
+    width: 33%;
+}
+
+.decoration .right {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    height: 50%;
+    width: 33%;
+}
+
+.section__reserve .wrapper {
+    position: relative;
+    z-index: 5;
+}
+
+@media screen and (min-width:768px) {
+    .decoration:after,
+    .decoration:before {
+        background-size: 75%;
+        height: 350px;
+    }
+
+    .mountains {
+        background-size: 150% auto;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .scenery:before {
+        background-size: 100% 250px;
+        background-position: center top ;
+    }
+
+    .decoration:after,
+    .decoration:before {
+        background-size: 60%;
+        height: 350px;
+    }
+
+    .mountains {
+        background-size: 100% auto;
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+    .decoration:after {
+        height: 400px;
+        background-size: 300px;
+    }
+
+    .decoration:before {
+        background-size: 240px;
+    }
+}
+
+
+/* ---fragment__pro--- */
+
+.subTitle__pro .sub-title ,
+.title__reserve{
+    color: var(--stepSubtitleColor);
+}
+
+.pro-group {
+    margin-bottom: 30px;
+}
+
+.pro-link {
+    display: block;
+    padding: 12px;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: all 0.25s ease;
+}
+
+.pro-link:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 8px rgba(0, 0, 0, 0.3);
+}
+
+.pro-item {
+    border-radius: 20px;
+}
+
+.pro-item + .pro-item {
+    margin-top: 20px;
+}
+
+.pro-link img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.pro-desrc {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.pro-desrc h4 {
+    color: var(--stepSubtitleColor);
+    font-size: 1.25rem;
+    width: 100%;
+    padding: 15px 0 ;
+    font-weight: 600;
+}
+
+.pro-desrc p {
+    color: var(--red);
+    font-size: 1rem;
+    margin-left: auto;
+}
+
+.pro-desrc p span {
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+.pro-desrc .warn-txt {
+    color: var(--green);
+    width: 100%;
+    text-align: right;
+    padding-bottom: 1rem;
+}
+
+.pro-note {
+    width: fit-content;
+    margin: 0 auto 40px; 
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+@keyframes floating {
+    from {
+        background-position-y: bottom;
+    }
+    to {
+        background-position-y: top;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .pro-group {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pro-item {
+        width: calc(50% - 7.5px);
+    }
+
+    .pro-item + .pro-item {
+        margin-top: initial;
+    }
+    
+    .pro-desrc h4 {
+        font-size: 1.5rem;
+        padding-bottom: 30px;
+    }
+
+    .btn-sale {
+        margin-left: 4px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .pro-item {
+        padding: 20px;
+    }
+
+    .btn-sale {
+        margin-left: 12px;
+    }
+}
+/* ---fragment__step--- */
+.step-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.step-item {
+    width: 33%;
+    padding-right: 16px;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.step-item:last-child {
+    margin-right: auto;
+}
+
+.step-item:nth-last-child(2) {
+    margin-left: auto;
+}
+
+.step-item .img-wrap {
+    width: 100%;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.step-item .img-wrap:after {
+    content: '';
+    width: 16px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    right: -2px;
+    top: calc((100% - 16px) / 2);
+    background: url(https://event.cdn-eztravel.com.tw/events/2022-taitung-balloon-booking/icon-ticket-arrow.png) no-repeat center / contain;
+    transform: translateX(100%) scale(0.75);
+}
+
+.step-item:last-child .img-wrap:after {
+    display: none;
+}
+
+.step-item h4 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.step-note {
+    padding: 20px 30px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: rgba(255,255,255,.45);
+    box-shadow: inset 0.2px 0 1px 0.5px #fff;
+    backdrop-filter: blur(5px);
+}
+
+@media screen and (min-width:540px) {
+    .step-item {
+        padding-right: 3rem;
+    }
+
+    .step-item .img-wrap:after {
+        right: -.75rem;
+        width: 2rem;
+        top: calc((100% - 2rem) / 2);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .step-group {
+        position: relative;
+        margin-right: -15px;
+    }
+
+    .step-item {
+        width: 20%;
+        padding-right: 30px;
+    }
+
+    .step-item .img-wrap:after {
+        right: -15px;
+        width: 15px;
+        top: calc((100% - 15px) / 2);
+    }
+
+    .step-item .img-wrap img  {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .step-item .img-wrap:after {
+        width: 24px;
+        right: -6px;
+    }
+}
+/* ------------ section__check setting ------------ */
+/* ---bg style / format--- */
+.section__check {
+    position: relative;
+    padding-bottom: 0;
+}
+
+.section__check:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.section__check:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/bg-taitung-air.jpg) no-repeat center bottom / auto 100%;
+}
+
+.section__check .wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+.section__check .wrapper:last-child {
+    max-width: initial;
+    background-color: #31b8d6;
+    padding: 30px 0 60px;
+}
+
+.bubble {
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: -39px;
+}
+
+.inner-wrap {
+    position: absolute;
+    width: 190%;
+    height: 400%;
+    background-color: #31b8d6;
+    border-radius: 50% 50% 0 0 / 50%;
+    top: 20px;
+    left: -45%;
+}
+
+.move-bubble {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.move-bubble:before,
+.move-bubble:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 5%;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #31b8d6;
+    border-radius: 50% 50% 0 0 / 50%;
+    animation: rotateEffect 2s alternate linear infinite;
+}
+
+.move-bubble:after {
+    top: -10px;
+    left: -2%;
+    animation-delay: -0.7s;
+}
+
+@keyframes rotateEffect {
+    0%{
+        border-radius: 37% 63% 0 0 / 50%;
+    }
+
+    50%{
+        border-radius: 45% 55% 0 0 / 50%;
+    }
+
+    100%{
+        border-radius: 36% 44% 0 0 / 50%;
+    }
+}
+
+.section__check .wrapper:last-child .block__check {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width:768px) {
+    .bubble {
+        height: 80px;
+        top: -79px;
+    }
+    
+    .inner-wrap {
+        top: 40px;
+    }
+
+    .section__check:before {
+        height: 50%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .section__check:before {
+        background-size: cover;
+    }
+}
+
+/* ---fragment__register--- */
+
+.fragment__register {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.sample-ticket {
+    order: -1;
+}
+
+.sample-ticket .img-wrap {
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto 18px;
+    max-width: 250px;
+}
+
+.sample-descr {
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.sample-descr p {
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.sample-note {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.procedure-wrap {
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.procedure-wrap:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: calc((100% - 28px) / 2);
+    width: 28px;
+    aspect-ratio: 1 / 1;
+    background: url(https://event.cdn-eztravel.com.tw/events/2022-taitung-balloon-booking/icon-ticket-arrow.png) no-repeat center / contain;
+    transform: rotate(90deg) scale(0.75);
+}
+
+.procedure-wrap:last-child:after {
+    display: none;
+}
+
+.procedure-item {
+    max-width: 180px;
+    border-radius: 50%;
+    aspect-ratio: 1/ 1;
+    background-color: var(--lightYellow);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.procedure-note {
+    max-width: 90%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+/* ---fragment__checkTime--- */
+
+.title__check {
+    color: var(--lightBlue);
+}
+
+.fragment__checkTime .table {
+    margin-bottom: 40px;
+}
+
+.subTitle__checkNote ,.check-note {
+    color: #fff;
+}
+
+@media screen and (min-width:768px) {
+    .section__check .wrapper:last-child {
+        padding-bottom: 80px;
+    }
+
+    .fragment__register {
+        display: grid;
+        column-gap:30px ;
+        grid-template-columns: 30% calc(70% - 30px);
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas: 
+        "ticket title "
+        "ticket procedure ";
+    }
+
+    .subTitle__register {
+        grid-area: title;
+        align-self: flex-end;
+    }
+
+    .sample-ticket {
+        grid-area: ticket;
+    }
+
+    .procedure {
+        grid-area: procedure;
+    }
+
+    .procedure-group {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .procedure-wrap {
+        flex: 1;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+
+    .procedure-wrap:last-child {
+        padding-right: 0;
+    }
+
+    .procedure-wrap:after {
+        bottom: calc((100% - 28px) / 2);
+        left: initial;
+        right: 0;
+        transform: scale(0.75);
+    }
+
+    .fragment__checkTime .table {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .check-note {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .section__check .wrapper:last-child {
+        padding-bottom: 100px;
+    }
+}
+/* ------------ section__service setting ------------ */
+/* ---bg style / format--- */
+.section__service {
+    background: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/paper-bg.jpg) repeat top left / 40px 40px;
+}
+
+.block__service {
+    position: relative;
+}
+
+.block__service * {
+    position: relative;
+    z-index: 1;
+}
+
+.block__service:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+    width: 100%;
+    height: 355px;
+    background: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/refund-img.png) no-repeat -50px bottom / 180px auto;
+}
+
+.block__service:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 44%;
+    width: 100%;
+    height: 336px;
+    background: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/suspend-img.png) no-repeat right 40px / 160px auto;
+}
+
+/* ---fragment__refund--- */
+
+.refund-ticket h4 {
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+/* ---fragment__suspend--- */
+
+.fragment__suspend {
+    margin-top: 40px;
+}
+
+.bulletin {
+    border: 4px solid var(--tableGray);
+    background-color: #fff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 0 20px 20px;
+    text-align: center;
+}
+
+.bulletin .img-wrap {
+    max-width: 425px;
+    height: 250px;
+    margin: 0 auto 20px;
+    background: #fff url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/post-mobile-app-2023.png) no-repeat bottom center / cover;
+}
+
+.bulletin-text h4 {
+    font-size: 1.25rem;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+.bulletin-text p {
+    padding-bottom: 24px;
+}
+
+.line-logo {
+    width: 20px;
+    aspect-ratio: 1 / 1;
+    margin-right: 6px;
+}
+
+/* ---fragment__contact--- */
+
+.fragment__contact {
+    padding: 28px 0;
+}
+
+.fragment__contact .btn {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 87px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* ---fragment__CI--- */
+
+.fragment__CI {
+    padding-top: 40px;
+}
+
+.fragment__CI .img-wrap {
+    width: 150px;
+}
+
+[class$="-CI"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+[class$="-CI"] span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray);
+    display: inline-block;
+    padding-right: 12px;
+    white-space: nowrap;
+}
+
+.main-CI {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .section__service {
+        background-size: 60px 60px;
+    }
+
+    .block__service:before,
+    .block__service:after {
+        display: none;
+    }
+
+    .block__service {
+        position: static;
+    }
+    
+    .block__service * {
+        position: static;
+    }
+
+    .block__service .sub-title {
+        font-size: 1.5rem;
+    }
+
+    .fragment__refund {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .subTitle__refund {
+        width: 30%;
+        position: relative;
+        background: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/refund-img.png) no-repeat center / 200px auto;
+    }
+    
+    .refund-ticket {
+        width: calc(70% - 30px);
+        margin-left: auto;
+    }
+
+    .fragment__suspend {
+        display: grid;
+        grid-template-columns: 30% calc(70% - 30px);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "title note "
+        "title bulletin ";
+        justify-content: space-between;
+    }
+
+    .subTitle__suspend {
+        grid-area: title;
+        width: 100%;
+        position: relative;
+        background: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/suspend-img.png) no-repeat center / 200px auto;
+    }
+
+    .suspend-note {
+        grid-area: note;
+        width: 100%;
+        margin-left: auto;
+        margin-bottom: initial;
+        padding-bottom: 1.225rem;
+    }
+
+    .bulletin {
+        grid-area: bulletin;
+        width: 100%;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        position: relative;
+    }
+
+    .bulletin .img-wrap {
+        width: 425px;
+    }
+
+    .bulletin-text h4 {
+        font-size: 1.5rem;
+    }
+    
+    .subTitle__refund:after,
+    .subTitle__suspend:after {
+        content: '';
+        position: absolute;
+        top: -8px;
+        right: -16px;
+        width: 3px;
+        height: calc(100% + 16px);
+        background: url(https://event.cdn-eztravel.com.tw/events/2023-taitung-balloon-booking/dashed.png) repeat-y top center/ contain;
+    }
+
+    .fragment__contact {
+        padding: 40px 0;
+    }
+
+    .fragment__CI {
+        display: flex;
+        max-width: 700px;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    
+    .fragment__CI .img-wrap {
+        width: 200px;
+    }
+
+    [class$="-CI"] + [class$="-CI"] {
+        margin-left: 20px;
+    }
+
+    .main-CI {
+        margin-bottom: initial;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .subTitle__refund,
+    .subTitle__suspend {
+        background-size: 90% auto;
+    }
+
+    .block__service .sub-title {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .block__service:after {
+        top: 47%;
+    }
+}
+
+/* ------animation------- */
+.title__info,
+.fragment__instr,
+.fragment__time {
+    opacity: 0;
+}
+
+.pro-item:last-child,
+.fragment__instr,
+.fragment__time {
+    animation-delay: 300ms;
+}
+
+.prepare {
+    opacity: 0;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeInUp {
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    30%{
+        opacity: 1;
+    }
+
+    40%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
